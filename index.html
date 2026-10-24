@@ -2,7 +2,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif:wght@600;700&display=swap">
 <style>
-/* Layout: một cột hẹp như phiếu khảo sát; thanh tiến độ trên cùng; mỗi trang là một lĩnh vực */
 :root{
   --bg:#f3f5f2; --surface:#ffffff; --ink:#1b2620; --muted:#5d6b63; --line:#d6ddd7;
   --pine:#1f4d3a; --pine-soft:#e3ece6; --brass:#a87b2a;
@@ -115,25 +114,25 @@ td.num,th.num{text-align:right}
   <header class="top">
     <span class="eyebrow">Học viện An ninh nhân dân · Phiếu tự đánh giá</span>
     <h1>Tự đánh giá cách học tập và sử dụng công nghệ số</h1>
-    <p class="muted">Giúp học viên tự nhận diện các thói quen có nguy cơ gây hại khi học tập, sinh hoạt trong môi trường số, và gợi ý cách điều chỉnh.</p>
+    <p class="muted">Giúp học viên tự nhận diện các thói quen có nguy cơ gây hại khi học tập, sinh hoạt trong môi trường số và gợi ý cách điều chỉnh.</p>
   </header>
 
   <nav class="tabs" role="tablist">
     <button role="tab" id="tab-quiz" aria-selected="true" data-view="quiz">Làm bài</button>
-    <button role="tab" id="tab-class" aria-selected="false" data-view="class">Tổng hợp lớp</button>
+    <button role="tab" id="tab-class" aria-selected="false" data-view="class">Xem kết quả</button>
     <button role="tab" id="tab-basis" aria-selected="false" data-view="basis">Cơ sở</button>
   </nav>
 
-  <!-- LÀM BÀI -->
+  <!-- BÀI -->
   <section id="view-quiz" class="panel">
     <div id="intro" class="panel">
       <div class="facts"><span><b>36</b> câu</span><span><b>6</b> lĩnh vực</span><span>Khoảng <b>8 phút</b></span><span>Không ghi họ tên</span></div>
       <ul class="domains" id="domainList"></ul>
       <div class="card panel">
-        <label class="field" for="classCode">Mã lớp hoặc khóa (không bắt buộc)
-          <input type="text" id="classCode" maxlength="12" placeholder="Ví dụ: D52A">
+        <label class="field" for="classCode">Trung đội, khoá (không bắt buộc)
+          <input type="text" id="classCode" maxlength="12" placeholder="Ví dụ: B7D56">
         </label>
-        <p class="note">Câu trả lời chỉ được xử lý trên máy của bạn, không gửi đi đâu. Hãy trả lời theo đúng thói quen trong khoảng 1 tháng gần đây, không có đáp án đúng hay sai.</p>
+        <p class="note">Câu trả lời chỉ thực hiện trên máy, không gửi đi đâu. Xin hãy trả lời theo đúng hoạt động trong khoảng 1 tháng gần đây của bạn, không có đáp án đúng hay sai.</p>
         <div class="row"><button class="btn" id="startBtn">Bắt đầu</button></div>
       </div>
     </div>
@@ -168,9 +167,9 @@ td.num,th.num{text-align:right}
       </div>
       <div id="alerts" class="panel"></div>
       <div class="card">
-        <h3 style="margin-bottom:14px">Điểm theo lĩnh vực</h3>
+        <h3 style="margin-bottom:14px">Điểm theo các mục</h3>
         <div class="dres" id="dres"></div>
-        <p class="note" style="margin-top:16px">Điểm càng cao càng an toàn. Từ 75 trở lên: Tốt. Từ 50 đến dưới 75: Cần lưu ý. Dưới 50: Cần cải thiện.</p>
+        <p class="note" style="margin-top:16px">Từ 75 trở lên: Tốt. Từ 50 đến dưới 75: Cần lưu ý. Dưới 50: Cần cải thiện.</p>
       </div>
       <div class="card">
         <h3 style="margin-bottom:6px">Việc nên làm ngay</h3>
@@ -179,7 +178,7 @@ td.num,th.num{text-align:right}
       </div>
       <div class="card panel">
         <h3>Mã kết quả</h3>
-        <p class="muted" style="font-size:14px">Nếu lớp đang tổng hợp kết quả, hãy sao chép mã này gửi cho người phụ trách. Mã chỉ chứa câu trả lời, không chứa thông tin cá nhân.</p>
+        <p class="muted" style="font-size:14px">Hãy sao chép mã này gửi cho người phụ trách. Mã chỉ chứa câu trả lời, không chứa thông tin cá nhân.</p>
         <div class="code" id="resultCode"></div>
         <div class="row"><button class="btn ghost" id="copyBtn">Sao chép mã</button><span id="copyMsg" class="muted" style="font-size:14px"></span></div>
       </div>
@@ -187,11 +186,11 @@ td.num,th.num{text-align:right}
     </div>
   </section>
 
-  <!-- TỔNG HỢP LỚP -->
+  <!-- KQ  -->
   <section id="view-class" class="panel" hidden>
     <div class="card panel">
-      <h2>Tổng hợp kết quả của lớp</h2>
-      <p class="muted">Dán các mã kết quả học viên gửi về, mỗi mã một dòng. Phần tổng hợp chạy ngay trên máy này.</p>
+      <h2>Tổng hợp kết quả </h2>
+      <p class="muted">Dán các mã kết quả học viên gửi về, mỗi mã một dòng.</p>
       <label class="field" for="codesIn">Danh sách mã kết quả
         <textarea id="codesIn" spellcheck="false"></textarea>
       </label>
