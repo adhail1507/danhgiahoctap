@@ -71,6 +71,7 @@ const D=[
         "Thận trọng với tài khoản lạ. Năm 2019, một nhóm nghiên cứu của NATO chỉ dùng tài khoản giả trên mạng xã hội đã lần ra được nhiều thông tin của người dùng."]}
 ];
 const REFS=[
+ "Bộ Giáo dục và Đào tạo (2025). Thông tư 02/2025/TT-BGDĐT quy định Khung năng lực số cho người học.",
  "Andreassen, C. S. và cộng sự (2016). The relationship between addictive use of social media and video games and symptoms of psychiatric disorders. <i>Psychology of Addictive Behaviors, 30</i>(2), 252–262. <a href=\"https://doi.org/10.1037/adb0000160\" target=\"_blank\" rel=\"noopener\">doi:10.1037/adb0000160</a>",
  "Barnard, L., Lan, W. Y., To, Y. M., Paton, V. O., &amp; Lai, S.-L. (2009). Measuring self-regulation in online and blended learning environments. <i>The Internet and Higher Education, 12</i>(1), 1–6.",
  "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., &amp; Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. <i>Psychological Science in the Public Interest, 14</i>(1), 4–58. <a href=\"https://doi.org/10.1177/1529100612453266\" target=\"_blank\" rel=\"noopener\">doi:10.1177/1529100612453266</a>",
@@ -83,6 +84,5 @@ const REFS=[
  "Morales-García, W. C., Sairitupa-Sanchez, L. Z., Morales-García, S. B., &amp; Morales-García, M. (2024). Development and validation of a scale for dependence on artificial intelligence in university students. <i>Frontiers in Education, 9</i>, 1323898. <a href=\"https://doi.org/10.3389/feduc.2024.1323898\" target=\"_blank\" rel=\"noopener\">doi:10.3389/feduc.2024.1323898</a>",
  "Przybylski, A. K., Murayama, K., DeHaan, C. R., &amp; Gladwell, V. (2013). Motivational, emotional, and behavioral correlates of fear of missing out. <i>Computers in Human Behavior, 29</i>, 1841–1848. <a href=\"https://doi.org/10.1016/j.chb.2013.02.014\" target=\"_blank\" rel=\"noopener\">doi:10.1016/j.chb.2013.02.014</a>",
  "Ward, A. F., Duke, K., Gneezy, A., &amp; Bos, M. W. (2017). Brain Drain: The Mere Presence of One’s Own Smartphone Reduces Available Cognitive Capacity. <i>Journal of the Association for Consumer Research, 2</i>(2), 140–154. <a href=\"https://doi.org/10.1086/691462\" target=\"_blank\" rel=\"noopener\">doi:10.1086/691462</a>",
- "Bộ Giáo dục và Đào tạo (2025). Thông tư 02/2025/TT-BGDĐT quy định Khung năng lực số cho người học.",
  "UNESCO (2023). <i>Guidance for generative AI in education and research</i>. Paris: UNESCO."
 ];
